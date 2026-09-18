@@ -4,6 +4,17 @@ This project is built upon the starter template from the [Next.js App Router Cou
 
 **Live Demo:** [https://nextjs-dashboard.ghujinstudio.my.id](https://nextjs-dashboard.ghujinstudio.my.id)
 
+Please use following credentials:
+
+**Email**
+```
+user@nextmail.com
+```
+**Password**
+```
+123456
+```
+
 ## 🏗️ Infrastructure & CI/CD Pipeline
 
 This project goes beyond frontend development by implementing a robust self-hosted infrastructure and a CI/CD pipeline. The following technologies were utilized:
