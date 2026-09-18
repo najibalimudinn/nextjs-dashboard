@@ -1,0 +1,15 @@
+services:
+  nextjs-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nextjs-dashboard-image:${IMAGE_TAG:-latest}
+    container_name: nextjs-dashboard-container
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: unless-stopped
