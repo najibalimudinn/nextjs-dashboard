@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build & Deploy') {
             steps {
-                withCredentials([file(credentialsId: 'nextjs-env-file', variable: 'SECRET_ENV_FILE')]) {
+                withCredentials([file(credentialsId: 'nextjs-dashboard-env', variable: 'SECRET_ENV_FILE')]) {
                     script {
                         sh """
                         echo "Menyiapkan environment variables..."
