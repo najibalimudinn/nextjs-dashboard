@@ -22,15 +22,15 @@ pipeline {
                         cp \$SECRET_ENV_FILE .env
 
                         echo "Menghentikan container versi sebelumnya (jika ada)..."
-                        docker compose down
+                        docker-compose down
 
                         echo "Membangun image Docker baru dengan tag \${IMAGE_TAG}..."
                         # Export IMAGE_TAG agar dibaca oleh compose.yaml
                         export IMAGE_TAG=\${IMAGE_TAG}
-                        docker compose build
+                        docker-compose build
 
                         echo "Menjalankan container baru..."
-                        docker compose up -d
+                        docker-compose up -d
                         """
                     }
                 }
